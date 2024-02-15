@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="headerContainer">
+        <div class="header_first">
+            <div class="logo"></div>
+            <h2>Ashish Shukla</h2>
+            <p>Full Stack Developer</p>
+        </div>
+        <div class="header_first">
+            <span><a href="#">Home</a></span>
+            <span><a href="#skills_section">Skills</a></span>
+            <span><a href="#project_section">Projects</a></span>
+            <span><a href="#contact_section">Contact Us</a></span>
+        </div>
+    </header>
+
+    <main class="mainContainer">
+        <img src="profile.jpg" alt="Photo" width="400px">
+        <div class="container1">
+            <div class="about">
+                <h1>Ashish Shukla</h1>
+                <h2>A little bit about me</h2>
+                <p>I am a computer science student. I am pursuing my BCA from Goel Institute of Higher Studies
+                    Mahavidyalaya
+                    which is affiliated with University Of Lucknow. Recently, I have completed my Summer Training on
+                    Full Stack Development using Django.
+                </p>
+            </div>
+            <div class="links">
+                <div><a onclick="dnload()">Resume</a></div>
+                <div><a href="#project_section" style="transition: 15s;">Projects</a></div>
+                <div><a href="#contact_section">Contacts</a></div>
+            </div>
+        </div>
+    </main>
+    <div id="skills_section" class="body-box">
+        <h1 style="color: rgb(1, 0, 3);font-size: 40px;">My Skills</h1>
+        <div class="container-box">
+            <div class="progress" style="--i:85;--clr:#43f94a;">
+                <h3>85 <span>%</span> </h3>
+                <h4>Html</h4>
+            </div>
+            <div class="progress" style="--i:55;--clr:#43f9cb;">
+                <h3>55<span>%</span> </h3>
+                <h4>CSS</h4>
+            </div>
+            <div class="progress less" style="--i:50;--clr:#f95243;">
+                <h3>50<span>%</span> </h3>
+                <h4>JavaScript</h4>
+            </div>
+            <div class="progress less" style="--i:65;--clr:#439bf9;">
+                <h3>65<span>%</span> </h3>
+                <h4>Python</h4>
+            </div>
+            <div class="progress less" style="--i:60;--clr:#f9437d;">
+                <h3>60<span>%</span> </h3>
+                <h4>Django</h4>
+            </div>
+            <div class="progress less" style="--i:70;--clr:#e1f943;">
+                <h3>70<span>%</span> </h3>
+                <h4>MySql</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- project section -->
+    <div class="projectContainer">
+        <h1 id="project_section" style="font-size: 45px;">Projects</h1>
+        <div class="projects">
+            <div class="box">
+                <svg style="width: 60px;" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M32 0C14.3 0 0 14.3 0 32S14.3 64 32 64H48c8.8 0 16 7.2 16 16V368c0 44.2 35.8 80 80 80h18.7c-1.8 5-2.7 10.4-2.7 16c0 26.5 21.5 48 48 48s48-21.5 48-48c0-5.6-1-11-2.7-16H450.7c-1.8 5-2.7 10.4-2.7 16c0 26.5 21.5 48 48 48s48-21.5 48-48c0-5.6-1-11-2.7-16H608c17.7 0 32-14.3 32-32s-14.3-32-32-32H144c-8.8 0-16-7.2-16-16V80C128 35.8 92.2 0 48 0H32zM192 80V272c0 26.5 21.5 48 48 48H560c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48H464V176c0 5.9-3.2 11.3-8.5 14.1s-11.5 2.5-16.4-.8L400 163.2l-39.1 26.1c-4.9 3.3-11.2 3.6-16.4 .8s-8.5-8.2-8.5-14.1V32H240c-26.5 0-48 21.5-48 48z" />
+                </svg>
+                <h1>Inventory Management System</h1>
+                <p>The Inventory Management System Web Project is a comprehensive online solution designed to streamline
+                    and optimize the management of goods and materials for businesses. This user-friendly system allows
+                    for efficient tracking of inventory levels, order processing, and stock movement in real-time.
+                </p>
+            </div>
+            <div class="box">
+                <svg style="width: 40px;" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM96 64H288c17.7 0 32 14.3 32 32v32c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32zm32 160a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM96 352a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM64 416c0-17.7 14.3-32 32-32h96c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM192 256a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm32 64a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zm64-64a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm32 64a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM288 448a32 32 0 1 1 0-64 32 32 0 1 1 0 64z" />
+                </svg>
+                <h1>Calculater</h1>
+                <p>The Calculator Web Project is an online tool designed for quick and efficient mathematical
+                    calculations. With a user-friendly interface, this project provides essential functions for
+                    addition, subtraction, multiplication, and division, catering to both basic and more complex
+                    mathematical needs.
+                </p>
+            </div>
+            <div class="box">
+                <svg style="width: 60px;" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M.3 166.9L0 68C0 57.7 9.5 50.1 19.5 52.3l35.6 7.9c10.6 2.3 19.2 9.9 23 20L96 128l127.3 37.6L181.8 20.4C178.9 10.2 186.6 0 197.2 0h40.1c11.6 0 22.2 6.2 27.9 16.3l109 193.8 107.2 31.7c15.9 4.7 30.8 12.5 43.7 22.8l34.4 27.6c24 19.2 18.1 57.3-10.7 68.2c-41.2 15.6-86.2 18.1-128.8 7L121.7 289.8c-11.1-2.9-21.2-8.7-29.3-16.9L9.5 189.4c-5.9-6-9.3-14.1-9.3-22.5zM32 448H608c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32zm96-80a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm128-16a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                </svg>
+                <h1>Landing page</h1>
+                <p>A landing page is a strategically designed web page that serves as the entry point for visitors to
+                    your project. It aims to captivate and engage users immediately, providing a concise overview of
+                    your project's key features, benefits, and purpose.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+
+    <div id="contact_section" class="ContactFormContainer">
+        <h1 style="font-size: 50px;">Contact Us</h1>
+        <span id="submitted_msg" style="font-size: 20px;color: #43f94a;"></span>
+        <form action="" onsubmit=" return validateForm()">
+            <div> <label for="Name">Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="" id="Name" placeholder="Enter your name" required><br>
+                <span id="nameLabel" style="color: red;"></span>
+            </div>
+
+            <div><label for="email">Email: </label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="email" name="" id="email" placeholder="enter your email" required>
+            </div>
+
+            <div>
+                <label for="number">Contact:</label>
+                <input type="text" name="number" id="phone" placeholder="xxx-xxx-xxxx" required>
+                <br> <span id="phoneErr" style="color: red;"></span>
+            </div>
+
+            <div style="display: flex;" > <label for="w3review">Massege:</label><br>
+                <textarea style="background-color: #F2EFE5;" id="w3review" name="w3review" rows="8" cols="55"
+                    placeholder="Enter your text here..."> </textarea><br>
+            </div>
+            <div id="submitBox">
+                <button type="submit" id="submit">submit</button>
+            </div>
+        </form>
+
+    </div>
+
+    <!-- footer Section -->
+    <footer class="footerContainer">
+        <div class="linkDetail">
+            <p>Email</p>
+            <a href="#">169ashishkumar@gmail.com</a>
+        </div>
+        <div class="linkDetail">
+            <p>GitHub</p>
+            <a href="#">GitHub.co.in</a>
+        </div>
+        <div class="linkDetail">
+            <p>Linkedin</p>
+            <a target="_blank" href="https://www.linkedin.com/feed/">https://www.linkedin.com/feed/</a>
+        </div>
+        <div class="linkDetail">
+            <p>This is created by </p>
+            <h3>&#169;Ashish Shukla</h3>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>

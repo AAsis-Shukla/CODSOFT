@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.headerContainer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFA447;
+}
+.header_first{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url('profile.jpg');
+    background-size: cover;
+}
+.header_first span a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+.header_first span:hover{
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.mainContainer{
+    background-color: #FFFC9B;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainer img{
+    border-radius: 50%;
+}
+.container1{
+    margin-left: 20px;
+    width: 400px;
+    height: 400px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.about{
+    width: 100%;
+    height: 50% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+}
+.about h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+.links{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.links div{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links div a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-weight: 600;
+}
+.links div a:hover{
+    text-decoration: underline;
+}
+
+.body-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 60vh;
+    background: #848282;
+}
+
+
+.container-box{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.container-box .progress{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    color: #fff;
+    background:#444 linear-gradient(to right, transparent 50%, var(--clr) 0 ) ;
+
+} 
+
+.container-box .progress h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    z-index: 1;
+    font-weight: 500;
+}
+
+.container-box .progress span{
+    font-size: 0.65em;
+    font-weight: 400;
+}
+
+.container-box .progress h4{
+    position: absolute;
+    top:62% ;
+    left: 50%;
+    transform:translate(-50%) ;
+    z-index: 1;
+    font-weight: 500;
+    color: var(--clr);
+    text-transform: uppercase;
+}
+
+.container-box .progress::before{
+    content: "";
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    transform-origin: left;
+    border-radius: 0 100% 100% 0/50%;
+}
+
+.container-box .progress::after{
+    content: "";
+    position: absolute;
+    inset:10px ;
+    border-radius: 50%;
+    background: #222;
+   
+}
+.container-box .progress::before{
+   background:var(--clr);
+   transform: rotate(calc(((var(--i) - 50) * 0.01turn)));
+   
+}
+
+.container-box .progress .less::before{
+   background: #444;;
+   transform: rotate(calc(((var(--i) 0) * 0.01turn)));
+   
+}
+
+
+
+/* project section */
+
+.projectContainer{
+    width: 100%;
+    height: 500px;
+    background-color: #E78895;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.projectContainer .projects{
+    width: 100%;
+    height: 80%;
+    background-color: #E78895;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.projectContainer .projects .box{
+    width: 25%;
+    height: 80%;
+    padding: 0 10px 0 10px;
+    background-color: #BED1CF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.projectContainer .projects .box h1{
+    text-align: center;
+}
+
+
+
+/* contact section */
+
+.ContactFormContainer{
+    width: 100%;
+    height: 500px;
+    background-color: #C7C8CC;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ContactFormContainer form{
+    width: 50%;
+    height: 80%;
+    padding: 0 10px 0 20px;
+    border-radius: 15px;
+    background-color: #B4B4B8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+}
+#submitBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#submitBox button {
+    
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #3498db;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover Effect */
+#submitBox button:hover {
+    background-color: #2980b9;
+  }
+.ContactFormContainer label{
+    font-size: 30px;
+}
+.ContactFormContainer input{
+    width: 400px;
+    height: 35px;
+    border: none;
+    border-radius: 15px;
+    padding-left:15px ;
+    background-color: #F2EFE5;
+}
+
+/* footer Section */
+.footerContainer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(170, 170, 141);
+}
+.linkDetail{
+   width: 20%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: start;
+}
+.linkDetail a{
+    text-decoration: none;
+}
